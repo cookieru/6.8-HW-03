@@ -36,12 +36,14 @@ label input
 button
 {
     display: block;
+    appearance: none;
+    border: 0;
+    cursor: pointer;
+
     margin: 20px auto 0;
     padding: 8px;
-    width: 40%;
-    border: #1C252C solid 2px;
+    width: 45%;
     border-radius: 8px;
-
 
     font-size: 18px;
     background-color:#F6F2F6;
@@ -50,6 +52,12 @@ button
 button:hover
 {
     background-color: #E1D5D9;
+}
+
+button:focus 
+{
+    outline: none;
+    box-shadow: 0 0 0 3px #333a42;
 }
 
 hr
