@@ -2,8 +2,15 @@ const inputField = document.querySelector('form input');
 const buttonElement = document.querySelector('form button');
 const duplicateField = document.querySelector("#duplicateField");
 
+/* 
 inputField.addEventListener('input', () => { 
         duplicateField.textContent = inputField.value;
+    }
+); 
+*/
+
+inputField.addEventListener('keypress', () => { 
+        duplicateField.textContent = inputField.value;    
     }
 );
 
