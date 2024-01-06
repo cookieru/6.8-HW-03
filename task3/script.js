@@ -1,23 +1,31 @@
-const trafficLightEl = document.querySelector('#trafficLight');
-trafficLightEl.addEventListener('click', makeGreen);
+const trafficLights = document.querySelectorAll('.trafficLight');
+let counter = 0; 
 
-function makeGreen() 
-{
-    trafficLightEl.style.background = ('green');
-    trafficLightEl.removeEventListener('click', makeGreen);
-    trafficLightEl.addEventListener('click', makeYellow);
-}
+trafficLights.forEach(element => {
+        element.addEventListener('click', nextColor)
+    }
+);
 
-function makeYellow() 
+function nextColor()
 {
-    trafficLightEl.style.background = ('yellow');
-    trafficLightEl.removeEventListener('click', makeYellow);
-    trafficLightEl.addEventListener('click', makeRed);
-}
+    counter++;
+    if (counter > 3) counter = 1;
+    
+    trafficLights.forEach(element => {
+        element.style.background = ('black');
+    });
 
-function makeRed() 
-{
-    trafficLightEl.style.background = ('red');
-    trafficLightEl.removeEventListener('click', makeRed);
-    trafficLightEl.addEventListener('click', makeGreen);
+    switch (counter) {
+        case 1:
+            trafficLights[2].style.background = ('green');
+            break;
+        case 2:
+            trafficLights[1].style.background = ('yellow');
+            break;
+        case 3:
+            trafficLights[0].style.background = ('red');
+            break;    
+        default:
+            break;
+    }
 }

@@ -1,6 +1,24 @@
-#trafficLight {
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #1C252C;
+}
+
+.group
+{
+    width: 600px;
+    margin: 20px auto 0;
+    padding: 40px;
+    border-radius: 20px;
+
+    background-color: #58545B;
+}
+
+.trafficLight {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background: black;
+    margin: auto;
 }
