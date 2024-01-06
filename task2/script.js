@@ -17,15 +17,15 @@ const MSG_PROMT =
 
 const consoleLog = document.querySelector("#consoleLog");
 consoleLog.addEventListener('click', () => alert(MSG_CONSOLELOG));
-ChangeText(consoleLog);
+//ChangeText(consoleLog);
 
 const alertElement = document.querySelector("#alert");
 alertElement.addEventListener('click', () => alert(MSG_ALERT));
-ChangeText(alertElement);
+//ChangeText(alertElement);
 
 const promptElement = document.querySelector("#prompt");
 promptElement.addEventListener('click', () => alert(MSG_PROMT));
-ChangeText(promptElement);
+//ChangeText(promptElement);
 
 function ChangeText(elem)
 {
