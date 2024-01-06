@@ -1,0 +1,19 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #1C252C;
+}
+
+p
+{
+    width: 600px;
+    margin: 20px auto 0;
+    padding: 40px;
+    border-radius: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    background-color: #58545B;
+    color: #F6F2F6;
+}

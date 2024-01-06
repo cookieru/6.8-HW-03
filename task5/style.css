@@ -1,0 +1,82 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #1C252C;
+}
+
+form
+{
+    width: 600px;
+    margin: 20px auto 0;
+    padding: 40px;
+    border-radius: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    background-color: #58545B;
+    color: #F6F2F6;
+}
+
+label
+{
+    display: block;
+    margin-right: 8px;
+
+    font-size: 24px;
+}
+
+label input
+{
+    position: relative;
+    width: 80%;
+    top: -2px;
+}
+
+button
+{
+    margin-top: 8px;
+
+    font-size: 18px;
+}
+
+hr
+{
+    margin-top: 20px;
+    width: 600px;
+    
+    border: none; /* Убираем границу для браузера Firefox */
+    color: #58545B; /* Цвет линии для остальных браузеров */
+    background-color: #58545B; /* Цвет линии для браузера Firefox и Opera */
+    height: 2px; /* Толщина линии */
+}
+
+p
+{
+    width: 600px;
+    margin: 20px auto 0;
+    padding: 20px 40px;
+    border-radius: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    background-color: #58545B;
+    color: #F6F2F6;
+}
+
+p:nth-of-type(1)
+{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: #E1D5D9 2px solid;
+    
+    font-size: 24px;
+}
+
+p:nth-of-type(2)
+{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    min-height: 22px;
+    margin: 0 auto 20px;
+
+    font-size: 18px;
+}
