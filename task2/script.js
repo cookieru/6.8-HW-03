@@ -17,19 +17,19 @@ const MSG_PROMT =
 
 const consoleLog = document.querySelector("#consoleLog");
 consoleLog.addEventListener('click', () => alert(MSG_CONSOLELOG));
-consoleLog.addEventListener('click', ChangeText);
+ChangeText(consoleLog);
 
 const alertElement = document.querySelector("#alert");
 alertElement.addEventListener('click', () => alert(MSG_ALERT));
-alertElement.addEventListener('click', ChangeText);
+ChangeText(alertElement);
 
 const promptElement = document.querySelector("#prompt");
 promptElement.addEventListener('click', () => alert(MSG_PROMT));
-promptElement.addEventListener('click', ChangeText);
+ChangeText(promptElement);
 
-function ChangeText()
+function ChangeText(elem)
 {
-    const textlabel = document.querySelector( "#" + this.getAttribute("id") + " + code");
+    const textlabel = document.querySelector( "#" + elem.getAttribute("id") + " + code");
     textlabel.textContent = textlabel.textContent.replace("Пример", "Пример использования команды");
     this.removeEventListener('click', ChangeText);
 }
